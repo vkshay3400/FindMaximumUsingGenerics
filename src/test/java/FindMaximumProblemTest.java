@@ -5,7 +5,7 @@ public class FindMaximumProblemTest {
     FindMaximumProblem findMaximum = new FindMaximumProblem();
 
     @Test
-        public void givenThreeIntegers_WhenMaximumFirstNumber_ThenShouldReturnMaximum() {
+    public void givenThreeIntegers_WhenMaximumFirstNumber_ThenShouldReturnMaximum() {
             int maximumOfInteger = findMaximum.getMaximumOfInteger(10, 8, 9);
         Assert.assertEquals(10, maximumOfInteger);
     }
@@ -32,5 +32,11 @@ public class FindMaximumProblemTest {
     public void givenThreeFloat_WhenMaximumSecondNumber_ThenShouldReturnMaximum() {
         Float maximumOfFloat = findMaximum.getMaximumOfFloat(10.2f, 12.6f, 9.7f);
         Assert.assertEquals((Float)12.6f, maximumOfFloat);
+    }
+
+    @Test
+    public void givenThreeFloat_WhenMaximumThirdNumber_ThenShouldReturnMaximum() {
+        Float maximumOfFloat = findMaximum.getMaximumOfFloat(10.2f, 12.6f, 14.7f);
+        Assert.assertEquals((Float)14.7f, maximumOfFloat);
     }
 }
