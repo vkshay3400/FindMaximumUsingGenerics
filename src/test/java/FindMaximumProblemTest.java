@@ -21,4 +21,10 @@ public class FindMaximumProblemTest {
         int maximumOfInteger = findMaximum.getMaximumOfInteger(10, 12, 14);
         Assert.assertEquals(14, maximumOfInteger);
     }
+
+    @Test
+    public void givenThreeFloat_WhenMaximumFirstNumber_ThenShouldReturnMaximum() {
+        Float maximumOfFloat = findMaximum.getMaximumOfFloat(10.2f, 8.6f, 9.7f);
+        Assert.assertEquals((Float)10.2f, maximumOfFloat);
+    }
 }
