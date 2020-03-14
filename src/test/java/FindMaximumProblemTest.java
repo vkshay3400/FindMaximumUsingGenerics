@@ -57,4 +57,10 @@ public class FindMaximumProblemTest {
         String maximumOfString = findMaximum.getMaximumOfString("dog", "cat", "mat");
         Assert.assertEquals("mat", maximumOfString);
     }
+
+    @Test
+    public void givenThreeString_WhenCapitalMaximumString_ThenShouldReturnMaximum() {
+        String maximumOfString = findMaximum.getMaximumOfString("DOG", "BAT", "CAT");
+        Assert.assertEquals("DOG", maximumOfString);
+    }
 }
