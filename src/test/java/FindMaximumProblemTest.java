@@ -69,4 +69,10 @@ public class FindMaximumProblemTest {
         String maximumOfString = findMaximum.getMaximumOfString("1", "2", "3");
         Assert.assertEquals("3", maximumOfString);
     }
+
+    @Test
+    public void givenThreeStringAsCombination_WhenGetMaximum_ThenShouldReturnMaximumString() {
+        String maximumOfString = findMaximum.getMaximumOfString("1", "abc", "ABC");
+        Assert.assertEquals("abc", maximumOfString);
+    }
 }
