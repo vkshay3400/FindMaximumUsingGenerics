@@ -6,7 +6,7 @@ public class FindMaximumProblemTest {
 
     @Test
     public void givenThreeIntegers_WhenMaximumFirstNumber_ThenShouldReturnMaximum() {
-            int maximumOfInteger = findMaximum.getMaximumOfInteger(10, 8, 9);
+        int maximumOfInteger = findMaximum.getMaximumOfInteger(10, 8, 9);
         Assert.assertEquals(10, maximumOfInteger);
     }
 
