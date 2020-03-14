@@ -6,7 +6,7 @@ public class FindMaximumProblem{
             maxResult = secondNumber;
             }
         if (thirdNumber.compareTo(maxResult) > 0) {
-            maxResult = secondNumber;
+            maxResult = thirdNumber;
             }
         return maxResult;
     }

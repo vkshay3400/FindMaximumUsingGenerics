@@ -15,4 +15,10 @@ public class FindMaximumProblemTest {
         int maximumOfInteger = findMaximum.getMaximumOfInteger(10, 12, 9);
         Assert.assertEquals(12, maximumOfInteger);
     }
+
+    @Test
+    public void givenThreeIntegers_WhenMaximumThirdNumber_ThenShouldReturnMaximum() {
+        int maximumOfInteger = findMaximum.getMaximumOfInteger(10, 12, 14);
+        Assert.assertEquals(14, maximumOfInteger);
+    }
 }
