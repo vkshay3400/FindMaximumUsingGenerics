@@ -45,4 +45,10 @@ public class FindMaximumProblemTest {
         String maximumOfString = findMaximum.getMaximumOfString("dog", "cat", "bat");
         Assert.assertEquals("dog", maximumOfString);
     }
+
+    @Test
+    public void givenThreeString_WhenMaximumSecondString_ThenShouldReturnMaximum() {
+        String maximumOfString = findMaximum.getMaximumOfString("dog", "mat", "bat");
+        Assert.assertEquals("mat", maximumOfString);
+    }
 }
