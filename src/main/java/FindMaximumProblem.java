@@ -23,6 +23,18 @@ public class FindMaximumProblem{
         return maxResult;
     }
 
+    //METHOD TO GET MAXIMUM STRING
+    public String getMaximumOfString(String firstString, String secondString, String thirdString){
+        String maxResult = firstString;
+        if (secondString.compareTo(maxResult) > 0) {
+            maxResult = secondString;
+        }
+        if (thirdString.compareTo(maxResult) > 0) {
+            maxResult = thirdString;
+        }
+        return maxResult;
+    }
+
     // MAIN METHOD
     public static void main(String[] args){
         System.out.println("Welcome to Find Maximum Problem");

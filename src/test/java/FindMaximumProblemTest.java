@@ -39,4 +39,10 @@ public class FindMaximumProblemTest {
         Float maximumOfFloat = findMaximum.getMaximumOfFloat(10.2f, 12.6f, 14.7f);
         Assert.assertEquals((Float)14.7f, maximumOfFloat);
     }
+
+    @Test
+    public void givenThreeString_WhenMaximumFirstString_ThenShouldReturnMaximum() {
+        String maximumOfString = findMaximum.getMaximumOfString("dog", "cat", "bat");
+        Assert.assertEquals("dog", maximumOfString);
+    }
 }
