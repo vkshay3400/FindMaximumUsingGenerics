@@ -1,6 +1,6 @@
-public class FindMaximumProblem{
-    //METHOD TO GET MAXIMUM INTEGER
-    public <T extends Comparable<T>> T getMaximum (T firstNumber, T secondNumber, T thirdNumber){
+public class FindMaximumProblem <T extends Comparable<T>> {
+    //GENERIC METHOD TO GET MAXIMUM
+    public T getMaximum (T firstNumber, T secondNumber, T thirdNumber){
         T maxResult = firstNumber;
         if (secondNumber.compareTo(maxResult) > 0) {
             maxResult = secondNumber;
