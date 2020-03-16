@@ -2,77 +2,88 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FindMaximumProblemTest {
-    FindMaximumProblem findMaximum = new FindMaximumProblem();
 
     @Test
-    public void givenThreeIntegers_WhenMaximumFirstNumber_ThenShouldReturnMaximumNumber() {
-        int maximumOfInteger = (Integer) findMaximum.getMaximum(10, 8, 9);
+    public void givenThreeIntegers_ParameterisedConstructor_WhenMaximumFirstNumber_ThenShouldReturnMaximumNumber() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem(10,8,9);
+        int maximumOfInteger = (Integer) findMaximum.getMaximum();
         Assert.assertEquals(10, maximumOfInteger);
     }
 
     @Test
-    public void givenThreeIntegers_WhenMaximumSecondNumber_ThenShouldReturnMaximumNumber() {
-        int maximumOfInteger = (Integer) findMaximum.getMaximum(10, 12, 9);
+    public void givenThreeIntegers_ParameterisedConstructor_WhenMaximumSecondNumber_ThenShouldReturnMaximumNumber() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem(10, 12, 9);
+        int maximumOfInteger = (Integer) findMaximum.getMaximum();
         Assert.assertEquals(12, maximumOfInteger);
     }
 
     @Test
-    public void givenThreeIntegers_WhenMaximumThirdNumber_ThenShouldReturnMaximumNumber() {
-        int maximumOfInteger = (Integer) findMaximum.getMaximum(10, 12, 14);
+    public void givenThreeIntegers_ParameterisedConstructor_WhenMaximumThirdNumber_ThenShouldReturnMaximumNumber() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem(10, 12, 14);
+        int maximumOfInteger = (Integer) findMaximum.getMaximum();
         Assert.assertEquals(14, maximumOfInteger);
     }
 
     @Test
-    public void givenThreeFloat_WhenMaximumFirstNumber_ThenShouldReturnMaximumFloat() {
-        Float maximumOfFloat = (Float) findMaximum.getMaximum(10.2f, 8.6f, 9.7f);
+    public void givenThreeFloat_ParameterisedConstructor_WhenMaximumFirstNumber_ThenShouldReturnMaximumFloat() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem(10.2f, 8.6f, 9.7f);
+        Float maximumOfFloat = (Float) findMaximum.getMaximum();
         Assert.assertEquals((Float)10.2f, maximumOfFloat);
     }
 
     @Test
-    public void givenThreeFloat_WhenMaximumSecondNumber_ThenShouldReturnMaximumFloat() {
-        Float maximumOfFloat = (Float) findMaximum.getMaximum(10.2f, 12.6f, 9.7f);
+    public void givenThreeFloat_ParameterisedConstructor_WhenMaximumSecondNumber_ThenShouldReturnMaximumFloat() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem(10.2f, 12.6f, 9.7f);
+        Float maximumOfFloat = (Float) findMaximum.getMaximum();
         Assert.assertEquals((Float)12.6f, maximumOfFloat);
     }
 
     @Test
-    public void givenThreeFloat_WhenMaximumThirdNumber_ThenShouldReturnMaximumFloat() {
-        Float maximumOfFloat = (Float) findMaximum.getMaximum(10.2f, 12.6f, 14.7f);
+    public void givenThreeFloat_ParameterisedConstructor_WhenMaximumThirdNumber_ThenShouldReturnMaximumFloat() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem(10.2f, 12.6f, 14.7f);
+        Float maximumOfFloat = (Float) findMaximum.getMaximum();
         Assert.assertEquals((Float)14.7f, maximumOfFloat);
     }
 
     @Test
-    public void givenThreeString_WhenMaximumFirstString_ThenShouldReturnMaximumString() {
-        String maximumOfString = (String) findMaximum.getMaximum("dog", "cat", "bat");
+    public void givenThreeString_ParameterisedConstructor_WhenMaximumFirstString_ThenShouldReturnMaximumString() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem("dog", "cat", "bat");
+        String maximumOfString = (String) findMaximum.getMaximum();
         Assert.assertEquals("dog", maximumOfString);
     }
 
     @Test
-    public void givenThreeString_WhenMaximumSecondString_ThenShouldReturnMaximumString() {
-        String maximumOfString = (String) findMaximum.getMaximum("dog", "mat", "bat");
+    public void givenThreeString_ParameterisedConstructor_WhenMaximumSecondString_ThenShouldReturnMaximumString() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem("dog", "mat", "bat");
+        String maximumOfString = (String) findMaximum.getMaximum();
         Assert.assertEquals("mat", maximumOfString);
     }
 
     @Test
-    public void givenThreeString_WhenMaximumThirdString_ThenShouldReturnMaximumString() {
-        String maximumOfString = (String) findMaximum.getMaximum("dog", "cat", "mat");
+    public void givenThreeString_ParameterisedConstructor_WhenMaximumThirdString_ThenShouldReturnMaximumString() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem("dog", "cat", "mat");
+        String maximumOfString = (String) findMaximum.getMaximum();
         Assert.assertEquals("mat", maximumOfString);
     }
 
     @Test
-    public void givenThreeString_WhenCapitalMaximumString_ThenShouldReturnMaximumString() {
-        String maximumOfString = (String) findMaximum.getMaximum("DOG", "BAT", "CAT");
+    public void givenThreeString_ParameterisedConstructor_WhenCapitalMaximumString_ThenShouldReturnMaximumString() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem("DOG", "BAT", "CAT");
+        String maximumOfString = (String) findMaximum.getMaximum();
         Assert.assertEquals("DOG", maximumOfString);
     }
 
     @Test
-    public void givenThreeNumber_WhenMaximumNumber_ThenShouldReturnMaximumString() {
-        String maximumOfString = (String) findMaximum.getMaximum("1", "2", "3");
+    public void givenThreeNumber_ParameterisedConstructor_WhenMaximumNumber_ThenShouldReturnMaximumString() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem("1", "2", "3");
+        String maximumOfString = (String) findMaximum.getMaximum();
         Assert.assertEquals("3", maximumOfString);
     }
 
     @Test
-    public void givenThreeStringAsCombination_WhenGetMaximum_ThenShouldReturnMaximumString() {
-        String maximumOfString = (String) findMaximum.getMaximum("1", "abc", "ABC");
+    public void givenThreeStringAsCombination_ParameterisedConstructor_WhenGetMaximum_ThenShouldReturnMaximumString() {
+        FindMaximumProblem findMaximum = new FindMaximumProblem("1", "abc", "ABC");
+        String maximumOfString = (String) findMaximum.getMaximum();
         Assert.assertEquals("abc", maximumOfString);
     }
 }
