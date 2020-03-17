@@ -16,7 +16,7 @@ public class FindMaximumProblem <T extends Comparable<T>> {
         this.thirdValue = thirdValue;
     }
 
-    //CALL GET MAXIMUM METHOD
+    //INTERNAL METHOD
     public T getMaximum() {
         maximumValues = getMaximum(firstValue,secondValue,thirdValue);
         printMaximum(maximumValues);
@@ -24,7 +24,7 @@ public class FindMaximumProblem <T extends Comparable<T>> {
     }
 
     //GENERIC METHOD TO GET MAXIMUM
-    public T getMaximum (T firstNumber, T secondNumber, T thirdNumber){
+    public  <T extends Comparable<T>> T getMaximum (T firstNumber, T secondNumber, T thirdNumber){
         T maxResult = firstNumber;
         if (secondNumber.compareTo(maxResult) > 0) {
             maxResult = secondNumber;
@@ -35,13 +35,12 @@ public class FindMaximumProblem <T extends Comparable<T>> {
         return maxResult;
     }
 
-    //PRINT MAX
+    //PRINT MAXIMUM VALUE
     public T printMaximum(T maxValue){
         System.out.println("Maximum value: " + maxValue );
-        return maxValue;
     }
 
-    // MAIN METHOD
+    //MAIN METHOD
     public static void main(String[] args){
         System.out.println("Welcome to Find Maximum Problem");
     }
